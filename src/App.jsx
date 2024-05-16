@@ -5,6 +5,8 @@ import DetallesOrden from "./page/deteallesOrden"
 import { useLocation } from "react-router-dom";
 import Navbar from './components/navbar';
 import './App.css'
+import Ordendeservicio from './page/ordendeservicio';
+import Precios from './page/precios';
 
 function App() {
   const locationNow = useLocation();
@@ -14,6 +16,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Login/>}/>
         <Route path='/dashboard' element={<Dashboard/>}/>
+        <Route path='/ordendeservicio' element={<Ordendeservicio/>}/>
+        <Route path='/precios' element={<Precios/>}/>
         <Route path='/detallesOrden' element={<DetallesOrden/>}/>
       </Routes>
     </div>
